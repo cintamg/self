@@ -11,6 +11,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Business from "./Components/Business";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/apple" element={<Apple/>}></Route>
           <Route path="/tesla" element={<Tesla/>}></Route>
           <Route path="/tech" element={<Tech/>}></Route>
+          <Route path="/business" element={<Business/>}></Route>
         </Routes>
       </div>
       </Router>
