@@ -4,6 +4,7 @@ import Journal from "./Components/Journal";
 import Apple from "./Components/Apple";
 import Tesla from "./Components/Tesla";
 import Tech from "./Components/Tech";
+import Business from "./Components/Business";
 
 import "./sidebar.css";
 import {
@@ -11,7 +12,6 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Business from "./Components/Business";
 
 function App() {
   return (
