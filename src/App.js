@@ -3,6 +3,7 @@ import Sidebar from "./Components/Sidebar";
 import Journal from "./Components/Journal";
 import Apple from "./Components/Apple";
 import Tesla from "./Components/Tesla";
+import Tech from "./Components/Tech";
 
 import "./sidebar.css";
 import {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/journal" element={<Journal/>}></Route>
           <Route path="/apple" element={<Apple/>}></Route>
           <Route path="/tesla" element={<Tesla/>}></Route>
+          <Route path="/tech" element={<Tech/>}></Route>
         </Routes>
       </div>
       </Router>
