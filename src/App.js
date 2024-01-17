@@ -1,8 +1,9 @@
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
+import Journal from "./Components/Journal";
 import "./sidebar.css";
 import {
-  BrouserRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
