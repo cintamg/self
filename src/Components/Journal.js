@@ -17,7 +17,7 @@ export default function Journal() {
 
   return (
     <div className="container">
-        <h1>The Wall Street Journal</h1>
+        <h1 className='text-center my-5'>The Wall Street Journal</h1>
         <div className="row">
         {
             data.map((element,index) => {
