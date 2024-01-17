@@ -2,6 +2,8 @@ import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
 import Journal from "./Components/Journal";
 import Apple from "./Components/Apple";
+import Tesla from "./Components/Tesla";
+
 import "./sidebar.css";
 import {
   BrowserRouter as Router,
@@ -19,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/journal" element={<Journal/>}></Route>
           <Route path="/apple" element={<Apple/>}></Route>
+          <Route path="/tesla" element={<Tesla/>}></Route>
         </Routes>
       </div>
       </Router>

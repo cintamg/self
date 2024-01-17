@@ -17,7 +17,7 @@ export default function Apple() {
 
   return (
     <div className="container">
-        <h1 className='text-center my-5'>Yahoo Entertainment</h1>
+        <h1 className='text-center my-5'>Apple News</h1>
         <div className="row">
         {
             data.map((element,index) => {
