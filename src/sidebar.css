@@ -46,6 +46,51 @@
   }
   
   .main-content {
-    margin-left: 200px; 
+    margin-left: 200px;
     padding: 20px;
+    background-color: rgb(191, 231, 228);
+  }
+
+  .home {
+    margin-top: 50px; 
+    color: rgb(18, 78, 58);
+  }
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: auto;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+  
+  .slides {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Center the content within each slide */
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 10px;
+    font-size: 50px;
+  }
+  
+  .next {
+    right: 10px;
+    font-size: 50px;
   }

@@ -5,7 +5,7 @@ import Apple from "./Components/Apple";
 import Tesla from "./Components/Tesla";
 import Tech from "./Components/Tech";
 import Business from "./Components/Business";
-
+import Home from "./Components/Home";
 import "./sidebar.css";
 import {
   BrowserRouter as Router,
@@ -21,6 +21,7 @@ function App() {
       <Sidebar/>
       <div className="main-content">
         <Routes>
+          <Route path="/" element={<Home/>}></Route>
           <Route path="/journal" element={<Journal/>}></Route>
           <Route path="/apple" element={<Apple/>}></Route>
           <Route path="/tesla" element={<Tesla/>}></Route>
