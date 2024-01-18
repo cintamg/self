@@ -25,6 +25,10 @@
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
   }
+
+  .sidebar di {
+    padding: 10px 10px 30px 10px;
+  }
   
   .sidebar a {
     color: inherit; /* Inherit the color from the parent element (navbar) */
@@ -34,6 +38,11 @@
     transition: border-color 0.3s; /* Smooth transition for border color */
     align-items: center;
     box-sizing: border-box;
+    font-size: 15px;
+  }
+
+  .sidebar a:hover {
+    background-color: rgb(179, 157, 157);
   }
   
   .main-content {
