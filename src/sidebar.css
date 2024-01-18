@@ -2,16 +2,38 @@
     display: flex;
   }
 
-  .navbar{
-    position: relative;
+  .navbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
   }
   
   .sidebar {
     width: 200px;
     background-color: #f0f0f0;
-    padding: 20px;
+    padding-top: 100px;
+    padding-left: 20px;
     position: fixed;
     height: 100%;
+  }
+
+  .sidebar dl {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .sidebar a {
+    color: inherit; /* Inherit the color from the parent element (navbar) */
+    text-decoration: none; /* Remove underlines from links */
+    border: 2px solid transparent; /* Set initial border style */
+    padding: 5px; /* Add padding for better visibility */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    align-items: center;
+    box-sizing: border-box;
   }
   
   .main-content {
