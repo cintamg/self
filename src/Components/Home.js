@@ -33,7 +33,7 @@ export default function Home() {
 
     useEffect(() => {
         // Automatically advance slides every 10 seconds
-        const intervalId = setInterval(nextSlide, 4000);
+        const intervalId = setInterval(nextSlide, 3000);
         // Clear the interval when the component is unmounted
         return () => clearInterval(intervalId);
     },[currSlide]);
@@ -42,13 +42,8 @@ export default function Home() {
     <div className="home">
         <h1 className='text-center'><b>Today's News</b></h1>
         <div className="slider-container">
-        <div className="slides" style={{ transform: `translateX(${-currSlide * 100}%)` }}>
-            {images.map((image, index) => (
-            <div key={index} className="slide">
-                {console.log(image)}
-                <img src={image} alt={`Slide ${index + 1}`} />
-            </div>
-            ))}
+        <div className="slides">
+            <img src={images[currSlide]} alt={`Slide ${currSlide + 1}`}/>
         </div>
         <div className="arrow prev" onClick={prevSlide}>&#8249;</div>
         <div className="arrow next" onClick={nextSlide}>&#8250;</div>
