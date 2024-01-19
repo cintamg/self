@@ -1,6 +1,11 @@
 import React from 'react'
 
 export default function Navbar() {
+
+  const currentDate = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = currentDate.toLocaleDateString(undefined, options);
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
@@ -17,6 +22,7 @@ export default function Navbar() {
                 <a className="nav-link active" aria-current="page" href="/about">About</a>
                 </li>
             </ul>
+            <div className="date">{formattedDate}</div>
             </div>
         </div>
         </nav>
