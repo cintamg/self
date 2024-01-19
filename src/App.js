@@ -6,7 +6,7 @@ import Tesla from "./Components/Tesla";
 import Tech from "./Components/Tech";
 import Business from "./Components/Business";
 import Home from "./Components/Home";
-import "./sidebar.css";
+import "./style.css";
 import {
   BrowserRouter as Router,
   Routes,
