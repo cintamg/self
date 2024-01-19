@@ -15,7 +15,7 @@
   .sidebar {
     width: 200px;
     background-color: #f0f0f0;
-    padding-top: 100px;
+    padding-top: 30px;
     padding-left: 20px;
     position: fixed;
     height: 100%;
@@ -48,6 +48,7 @@
   
   .main-content {
     margin-left: 200px;
+    margin-top: 70px;
     padding: 20px;
     background-color: rgb(191, 231, 228);
   }
@@ -105,4 +106,39 @@
 
   .nav-item a:hover {
     background-color: rgb(180, 175, 175);
+  }
+
+  .intro {
+    font-family: 'Helvetica', sans-serif;
+    font-size: large;
+  }
+
+  .definition-list {
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+  }
+
+  .conclution {
+    font-family: 'Arial', sans-serif;
+  }
+
+  .card {
+    width: 300px; /* Adjust the width as per your design */
+    height: 400px; /* Adjust the height as per your design */
+    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+    box-sizing: border-box; /* Ensures that padding and border are included in the total width and height */
+    margin: 10px; /* Optional: Add margin for spacing between cards */
+  }
+  
+  /* Additional styling for card content, if needed */
+  .card p {
+    /* Example: Style for paragraph text inside the card */
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .card img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover; /* Optional: Preserve aspect ratio and cover the entire container */
   }

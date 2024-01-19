@@ -23,7 +23,7 @@ export default function Tech() {
             data.map((element,index) => {
                 return(
                     <div className="col-md-4" key={index}>
-                        <NewsItems author={element.author} title={element.title} description={element.description} textUrl={element.url} imageUrl={element.urlToImage} />
+                        <NewsItems author={element.author} title={element.title?element.title.slice(0,50):""} description={element.description?element.description.slice(0, 88)+"...":""} textUrl={element.url} imageUrl={element.urlToImage?element.urlToImage:"https://www.google.com/imgres?imgurl=https%3A%2F%2Fassets.stickpng.com%2Fimages%2F62976bdd7ec76b82fb21fcf5.png&tbnid=BleudVMb6WsTUM&vet=12ahUKEwik1siDwueDAxV7j2MGHTaBCiQQMygSegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.stickpng.com%2Fimg%2Ficons-logos-emojis%2Ftech-companies%2Ftechcrunch-white-logo&docid=-dOB7paxXYeyCM&w=1024&h=375&q=TechCrunch%20logo%20png&ved=2ahUKEwik1siDwueDAxV7j2MGHTaBCiQQMygSegQIARB1"} />
                     </div>
                 )
             })

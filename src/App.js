@@ -6,6 +6,7 @@ import Tesla from "./Components/Tesla";
 import Tech from "./Components/Tech";
 import Business from "./Components/Business";
 import Home from "./Components/Home";
+import About from "./Components/About";
 import "./style.css";
 import {
   BrowserRouter as Router,
@@ -22,6 +23,7 @@ function App() {
       <div className="main-content">
         <Routes>
           <Route path="/" element={<Home/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
           <Route path="/journal" element={<Journal/>}></Route>
           <Route path="/apple" element={<Apple/>}></Route>
           <Route path="/tesla" element={<Tesla/>}></Route>
